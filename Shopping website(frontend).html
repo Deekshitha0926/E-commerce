@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixorus - E-Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f8fa;
+      font-family: "Poppins", sans-serif;
+    }
+    .sidebar {
+      background: #fff;
+      height: 110vh;
+      padding-top: 20px;
+      border-right: 1px solid #eee;
+    }
+    .sidebar a {
+      display: block;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration:none;
+      /* transition: all 0.3s; */
+    }
+    .sidebar a:hover {
+      background-color: #f2f2f2;
+    }
+    .banner {
+      background-color: #b5dcd4;
+      border-radius: 10px;
+      padding: 30px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .product-card p{
+        font-weight: bold;
+    }
+    .deal-timer {
+      color: red;
+      font-weight: bold;
+    }
+    .right-panel img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .p1{
+        width: 170px;
+        height: 160px;
+        float: right;
+        margin-right: 30px;
+    }
+    #i1{
+      font-weight: bold;
+      text-align: center;
+    }
+    .c1{
+      text-align: center;
+    }
+    #i2{
+      font-weight: bold;
+      text-align: center;
+    }
+    #i3{
+      height: 350px;
+    }
+    #i3 button{
+      background-color: rgb(242, 184, 10);
+      color: white;
+      border-radius: 5px;
+      border-width: 1px;
+      width: 140px;
+      height: 40px;
+    }
+    #i3 button:hover{
+      background-color: green;
+    }
+    .f1{
+      font-weight: bold;
+    }
+    #footer{
+      background-color: rgba(80, 40, 116, 0.849);
+      padding: 60px;
+      color: white;
+    }
+    #footer a{
+      color: white;
+    }
+    #footer h5{
+      font-weight: bold;
+      margin-top: 25px;
+    }
+    #copyright{
+      background-color: rgba(80, 40, 116, 0.849);
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-2 sidebar">
+        <h5 class="text-center mb-4">Categories</h5><hr>
+        <a href="#">Traditional Wear</a>
+        <a href="#">Western Wear</a>
+        <a href="#">Swim & Beachwear</a>
+        <a href="#">Winter & Seasonal Wear</a>
+        <a href="#">Beauty & Grooming</a>
+        <a href="#">Jewellery</a>
+        <a href="#">Personal Care</a>
+        <a href="#">International Brands</a>
+        <a href="#">Footwear</a>
+        <a href="#">Watches</a>
+        <a href="#">Accessories</a>
+      </div>
+
+      <!-- Main content -->
+      <div class="col-md-8 py-3">
+        <!-- Navbar -->
+        <nav class="navbar navbar-light bg-white shadow-sm mb-3 px-3 rounded">
+          <a class="navbar-brand fw-bold" href="#">PIXORUS</a>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search product" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+          <div>
+            <span class="me-3 fw-semibold">Diego Morata</span>
+            <button class="btn btn-outline-secondary btn-sm">Cart</button>
+            <button class="btn btn-outline-secondary btn-sm">Orders</button>
+          </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="banner">
+          <img src="C:\Users\deeks\OneDrive\Pictures\Screenshots\Screenshot 2025-10-26 103418.png" class="p1">
+          <h3>Biggest Offer Revealed</h3>
+          <h4>More deals inside up to 50% off</h4>
+          <button class="btn btn-dark mt-3">Wishlist Now</button>
+        </div>
+
+        <!-- Deals of the Day -->
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h5>Deals of the Day</h5>
+          <p class="deal-timer mb-0">20 : 45 : 12 Left</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://dillibazar.co.in/wp-content/uploads/Gucci-Ladies-Purse.jpg" alt="bag">
+              <h6>Red leather GUCCI bag</h6>
+              <p class="text-muted small">Rs. 4500</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://www.lexrx.co/wp-content/uploads/2022/09/Lex_ProductImages_BrightenTone-EverydayCream.jpg" alt="cream">
+              <h6>LEXRX face cream</h6>
+              <p class="text-muted small">Rs. 300</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://i.gadgets360cdn.com/products/cameras/large/1548234866_832_fujifilm_xt2-24-3mp-dslr-camera.jpg?downsize=*:360" alt="camera">
+              <h6>Fuji Film DSLR Camera</h6>
+              <p class="text-muted small">Rs. 35000</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://www.jiomart.com/images/product/original/rvkju8kcdq/birde-comfortable-regular-wear-sky-blue-led-shoes-for-kids-product-images-rvkju8kcdq-1-202403191925.jpg?im=Resize=(500,630)" alt="shoes">
+              <h6>Sky Blue Kids Shoe</h6>
+              <p class="text-muted small">Rs. 910</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right panel -->
+      <div class="col-md-2 py-3 right-panel">
+        <h6>Recently Viewed</h6>
+        <img src="https://hidesign.com/cdn/shop/products/kiboko-03-womens-orange-tote-bag_1.jpg?v=1721298922&width=800" alt="orange bag" class="mb-3">
+        <h6 class="c1">Brown Leather Bag</h6>
+        <p class="text-muted small" id="i1">Rs. 500</p>
+        <h6>Suggestions for You</h6>
+        <img src="https://claura.in/cdn/shop/files/017A8404_1_1.jpg?v=1732947444" alt="dress"><br><br>
+        <h6 class="c1">Floral Maxi Dress</h6>
+        <p class="text-muted small" id="i2">Rs. 600</p>
+        
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw4719f5ec/images/Fastrack/Catalog/3287KL01_2.jpg?sw=600&sh=600" alt="watch">
+          <h6>Fastrack tick tock leather watch</h6>
+          <p class="text-muted small">Rs. 2000</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Wireless_3.0_Earbuds_Transparent_3.png" alt="earbuds">
+          <h6>EDYELL A1 TWS wireless earbuds</h6>
+          <p class="text-muted small">Rs. 900</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://m.media-amazon.com/images/I/611+OfxzQRL.jpg" alt="fogg">
+          <h6>Fogg marco no gas deodorant perfume</h6>
+          <p class="text-muted small">Rs. 500</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://clothsvilla.com/cdn/shop/files/wine-luxury-designer-gown-with-zari-thread-sequins-embroidery-elegant-attire-for-desirable-women_1_853x.jpg?v=1705509860" alt="dress">
+          <h6>Wine luxury designer gown with zari thread</h6>
+          <p class="text-muted small">Rs. 600</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div><br>
+    <div class="row g-3">
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://image01-in.oneplus.net/media/202504/29/f7dd3061e62632c0f49d1f9c28ccc214.png?x-amz-process=image/format,webp/quality,Q_80" alt="mobile">
+          <h6>Oneplus latest 5G mobile phone</h6>
+          <p class="text-muted small">Rs. 25000</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://www.kusvaa.com/wp-content/uploads/2025/01/kusvaa-wkr062-anushree-cotton-blockprint-kurta-featured-300x450.jpg" alt="dress">
+          <h6>Rayon kurta for women</h6>
+          <p class="text-muted small">Rs. 300</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://m.media-amazon.com/images/I/419wOlkkGqL._SR290,290_.jpg" alt="moisturizer">
+          <h6>Dot&key barrier repair and hydrating moisturizer</h6>
+          <p class="text-muted small">Rs. 500</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://campussutra.com/cdn/shop/files/CSMSSRT7094_1_b104d018-9bec-44ba-848b-5c4cd5350443.jpg?v=1722595921" alt="shirt">
+          <h6>Campus sutra men's ash brown veined-textured shirt</h6>
+          <p class="text-muted small">Rs. 400</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div><br>
+    <div class="row g-3">
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/308169_nhjiel.png" alt="washing machine">
+          <h6>Whirlpool 7kg 5 star inverter fully automatic front load washing machine</h6>
+          <p class="text-muted small">Rs. 30000</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://kaydeeelectronics.in/cdn/shop/files/untitled-design-59-66e410cc229bf.webp?v=1726222584&width=1946" alt="fridge">
+          <h6>Whirlpool 184L 1 star single door refrigerator</h6>
+          <p class="text-muted small">Rs. 20000</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://m.media-amazon.com/images/I/510uTHyDqGL.jpg" alt="laptop">
+          <h6>Microsoft new surface 7th edition windows 11 laptop</h6>
+          <p class="text-muted small">Rs. 60000</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://m.media-amazon.com/images/I/81PtF30TLUL._AC_UY1100_.jpg" alt="bag">
+          <h6>Half moon laptop bag for men</h6>
+          <p class="text-muted small">Rs. 400</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div><br>
+    <div class="row g-3">
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://m.media-amazon.com/images/I/61alJiAci1L._AC_UY1100_.jpg" alt="saree">
+          <h6>Avantika fashion women's kanjivaram soft pure silk saree</h6>
+          <p class="text-muted small">Rs. 500</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://images.meesho.com/images/products/83460557/2inoa_512.webp?width=512" alt="top">
+          <h6>Women self design rayon embroidery short top</h6>
+          <p class="text-muted small">Rs. 350</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/jean/p/g/m/30-t-baggy-dark-blue-tidda-original-imah3ztw5ngr78hf.jpeg?q=90" alt="jeans">
+          <h6>DAKWINS loose fit men dark blue jeans</h6>
+          <p class="text-muted small">Rs. 950</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="product-card" id="i3">
+          <img src="https://www.ekanalabel.com/cdn/shop/files/IMG_7897.jpg?v=1742879273&width=1200" alt="dress">
+          <h6>Harita brown three piece suit set</h6>
+          <p class="text-muted small">Rs. 800</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div><br>
+    <div class="row" id="footer">
+      <div class="col-md-5 py-3">
+        <h2 class="f1">PIXORUS</h2>
+        <p>Pixorus mall,vishnupur<br>Bhimavaram,West godavari<br>Dt., A. P. 534 202<br>Ph.088 16 250864<br><br>Email: <a href="#">shrivishnu@svecw.edu.in</a></p>
+      </div>
+      <div class="col-md-4">
+        <h5>Customer Service</h5>
+        <p>Payment & shipment<br>Track my order<br>Refund Policy<br>Wholesale</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Working Time</h5>
+        <p>Monday-Friday<br>9:00AM to 8:00PM</p>
+      </div>
+    </div>
+    <div class="row" id="copyright">
+      <p>Copyright@2025 shri vishnu | All rights reserved</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
